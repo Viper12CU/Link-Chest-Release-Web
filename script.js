@@ -15,6 +15,10 @@ const specDownloads = document.getElementById("spec-downloads");
 const specStatus = document.getElementById("spec-status");
 const specFilename = document.getElementById("spec-filename");
 
+const copyRight = document.getElementById("copy-right");
+
+copyRight.textContent = `${new Date().getFullYear()} Link Chest. All rights reserved.`;
+
 const releaseList = document.getElementById("release-list");
 
 function formatDate(date) {
