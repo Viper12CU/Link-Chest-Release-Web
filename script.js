@@ -98,7 +98,7 @@ function showLatest(release) {
   heroVersion.textContent = release.tag_name || "v1.0.0";
   heroDescription.textContent =
     release.body?.split("\n")[0] ||
-    "A modern, high-performance distribution hub for developers. This build includes critical stability improvements and optimized binary streaming for mobile APKs.";
+    'El organizador de enlaces que necesitabas: guarda, clasifica y encuentra tus links favoritos al instante. Con bóveda privada protegida por biometría y todo almacenado localmente en tu dispositivo.';
 
   if (apk) {
     heroDownloadBtn.href = apk.browser_download_url;
@@ -142,7 +142,7 @@ function showLatest(release) {
 function showHistory(releases) {
   releaseList.innerHTML = "";
 
-  releases.forEach((release) => {
+  releases.slice(1).forEach((release) => {
     const apk = getAPK(release);
 
     const card = document.createElement("div");
